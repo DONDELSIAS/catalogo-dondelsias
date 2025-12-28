@@ -1,0 +1,71 @@
+{
+  "COMENTARIOS_MAESTROS": "Configuración V8.0 - Incluye Largos Superiores y Lógica de Estatura Inferior",
+
+  "SUPERIOR": {
+    "regla_ancho": "Ancho (Axila a Axila). Define la Talla Base (S, M, L...)",
+    "limites_ancho": {
+      "S": 48,
+      "M": 51,
+      "L": 56,
+      "XL": 60,
+      "XXL": 65
+    },
+    
+    "regla_largo": "Largo (Hombro a bajo). Define si es Corta, Standard o Larga para esa talla.",
+    "limites_largo_minimo": {
+      "S": 68,
+      "M": 71,
+      "L": 74,
+      "XL": 77,
+      "XXL": 80
+    }
+  },
+
+  "INFERIOR": {
+    "regla_cintura": "Ancho Plano (Cintura). Se busca el valor más cercano para definir Talla Numérica.",
+    "mapa_tallas": {
+      "38": {"ancho_plano": 38, "equivalencia": "XS / S"},
+      "40": {"ancho_plano": 40, "equivalencia": "S"},
+      "42": {"ancho_plano": 42, "equivalencia": "M"},
+      "44": {"ancho_plano": 44, "equivalencia": "M / L"},
+      "46": {"ancho_plano": 46, "equivalencia": "L"},
+      "48": {"ancho_plano": 48, "equivalencia": "XL"},
+      "50": {"ancho_plano": 50, "equivalencia": "XL / 2XL"},
+      "52": {"ancho_plano": 52, "equivalencia": "2XL"}
+    },
+
+    "regla_largo": "Largo Total (Cintura a Basta). Define la recomendación de Estatura.",
+    "rangos_estatura": [
+      {
+        "max_largo": 100, 
+        "txt_estatura": "1.60 - 1.65 m", 
+        "fit_visual": "Fit Bajo / Crop",
+        "icono": "🧸"
+      },
+      {
+        "max_largo": 104, 
+        "txt_estatura": "1.66 - 1.72 m", 
+        "fit_visual": "Estatura Promedio",
+        "icono": "🧍"
+      },
+      {
+        "max_largo": 108, 
+        "txt_estatura": "1.73 - 1.79 m", 
+        "fit_visual": "Fit Regular",
+        "icono": "👤"
+      },
+      {
+        "max_largo": 112, 
+        "txt_estatura": "1.80 - 1.86 m", 
+        "fit_visual": "Fit Alto / Tall",
+        "icono": "🦒"
+      },
+      {
+        "max_largo": 119, 
+        "txt_estatura": "1.87 m o más", 
+        "fit_visual": "Fit Gigante / Extra Tall",
+        "icono": "🏀"
+      }
+    ]
+  }
+}
